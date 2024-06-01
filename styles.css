@@ -1,0 +1,146 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Cambio de la fuente de letra */
+    color: #ffffff; /* Color del texto */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4e54c8, #8f94fb); /* Fondo azul con difuminado */
+    animation: gradientAnimation 10s ease infinite alternate; /* Animación del fondo */
+  }
+  
+  header {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo del encabezado con transparencia */
+    padding: 20px;
+    text-align: center; /* Alinear texto al centro */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Alinear texto del menú al centro */
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Color del texto del menú */
+    font-size: 20px; /* Tamaño de fuente del menú */
+    font-weight: bold;
+    transition: color 0.3s; /* Transición de color al pasar el cursor */
+  }
+  
+  nav ul {
+    display: flex; /* Cambio a un diseño de caja flexible */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+  }
+  
+  nav ul li {
+    margin: 0 10px; /* Espacio entre elementos del menú */
+  }
+  
+  nav ul li a:hover {
+    color: #ffc107; /* Cambio de color al pasar el cursor */
+    transform: scale(1.1); /* Efecto de escala */
+  }
+  
+  #presentacion {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #habilidades .contenido {
+    background-color: #4c5476; /* Color de fondo del cuadro de habilidades */
+  }
+  
+  #educacion .contenido {
+    background-color: #3c4b66; /* Color de fondo del cuadro de educación */
+  }
+  
+  #experiencia .contenido {
+    background-color: #2c3b56; /* Color de fondo del cuadro de experiencia */
+  }
+  
+  #contacto .contenido {
+    background-color: #1c2a46; /* Color de fondo del cuadro de contacto */
+  }
+  
+  .contenido {
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 30px auto; /* Margen exterior automático */
+    padding: 30px; /* Espaciado interior */
+    width: 80%; /* Ancho del cuadro */
+    text-align: left; /* Texto alineado a la izquierda */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s; /* Transición de transformación */
+  }
+  
+  .contenido:hover {
+    transform: translateY(-10px); /* Efecto de desplazamiento hacia arriba */
+  }
+  
+  .contenido h1 {
+    font-size: 36px; /* Tamaño de fuente del título */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  .contenido h2 {
+    font-size: 28px; /* Tamaño de fuente del subtítulo */
+    margin-bottom: 10px; /* Espacio inferior */
+  }
+  
+  .contenido p {
+    font-size: 20px; /* Tamaño de fuente del texto */
+    line-height: 1.5; /* Espacio entre renglones */
+  }
+  
+  .imagenes {
+    display: flex;
+    justify-content: center; /* Centrar las imágenes */
+    gap: 20px; /* Separar las imágenes entre sí */
+    margin-top: 30px;
+  }
+  
+  .imagenes img {
+    width: 25%; /* Ancho de las imágenes reducido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s; /* Transición de transformación */
+  }
+  
+  .imagenes img:hover {
+    transform: scale(1.1); /* Efecto de escala */
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .contacto {
+    text-align: center;
+    margin: 30px auto;
+  }
+  
+  .contacto a {
+    text-decoration: none;
+    color: #ffc107; /* Color del texto del contacto */
+    font-size: 24px; /* Tamaño de fuente del contacto */
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s; /* Transiciones */
+    letter-spacing: 2px; /* Espaciado entre letras */
+  }
+  
+  .contacto a:hover {
+    color: #ffffff; /* Cambio de color al pasar el cursor */
+    transform: scale(1.1); /* Efecto de escala */
+    text-shadow: 2px 2px #8f94fb; /* Sombra del texto */
+  }
+  
